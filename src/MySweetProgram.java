@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// ref - https://www.youtube.com/watch?v=r3GGV2TG_vw
+
 public class MySweetProgram { // Class and it's identifier
     public static void main(String[] args) { //methods and it's identifier
         System.out.println("What is your name? ");
