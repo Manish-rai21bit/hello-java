@@ -142,6 +142,10 @@ public class MySweetProgram { // Class and it's identifier
             }
             System.out.println();
         }
+
+        // 3.14 Variable scope - where can variable be created.
+        // In Java we can't create a variable if it's still in scope
+
     }
 }
 
