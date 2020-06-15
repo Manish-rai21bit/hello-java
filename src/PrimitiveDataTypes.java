@@ -32,7 +32,6 @@ public class PrimitiveDataTypes {
 
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Integer.SIZE);
-
         int m = 5;
         double n = (double)  m/2;
         System.out.println(n);
