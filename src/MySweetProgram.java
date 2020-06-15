@@ -118,6 +118,30 @@ public class MySweetProgram { // Class and it's identifier
         } while(!guess1.equals(password));
         System.out.println("Welcome back!");
 
+        // 2.57 More on loops
+        /*
+        for loop
+        */
+        for(int j=0; j< 4; j++){
+            System.out.println(j);
+        }
+
+        // 3.02 Nested loops - same as python, R, etc.
+        // print cube
+        for(int k=9; k>=0; k--){
+            for(int l=9; l>=0; l--){
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+
+        // print pyramid
+        for(int m=9; m>=0; m--){
+            for(int n=m; n>=0; n--){
+                System.out.print(n + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
