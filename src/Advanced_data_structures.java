@@ -1,10 +1,7 @@
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
-public class advanced_data_structures {
+public class Advanced_data_structures {
     // index starts with 0
     public static void main(String[] args){
         // int[] grades = new int[10];
@@ -72,6 +69,18 @@ public class advanced_data_structures {
             gradesAL2.set(i, gradesAL2.get(i)*2); // multiply each element by 2
         }
         System.out.println(Arrays.toString(gradesAL2.toArray()));
+
+        // Nested 2D list
+        System.out.println("Nested 2D list");
+        List<List<Integer>> gradesAL2d = new ArrayList<List<Integer>>();
+        gradesAL2d.add(Arrays.asList(1, 2, 4));
+        gradesAL2d.add(Arrays.asList(3, 2, 8));
+        for (List<Integer> g : gradesAL2d){
+            for(int g2 : g){
+                System.out.print(g2 + " ");
+            }
+        }
+        System.out.println();
     }
 }
 
