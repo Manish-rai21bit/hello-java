@@ -26,6 +26,7 @@ class LeetCode {
     }
 
     // 3. Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+    // run through half the length of number and see if the 1st half and and the reversed 2nd half match
     public boolean isPalindrome(int x) {
         if(x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
