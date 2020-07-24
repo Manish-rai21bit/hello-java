@@ -115,7 +115,7 @@ class LeetCode {
         String result = "";
         for (char c : str.toCharArray()){
             if(Character.isUpperCase(c)){
-                result = result+(char)(c+32);
+                result = result+(char)(c+32); // add 32 to an ascii converts to lower
             }
             else{
                 result = result + c;
@@ -123,4 +123,20 @@ class LeetCode {
         }
         return result;
     }
+
+    // 8. Reverse string, without allocating extra space for another array
+    public void reverseString(char[] s) {
+        int pointer_i = 0;
+        int pointer_j = s.length-1;
+
+        while(pointer_i<=pointer_j){
+            // hold first char and change pointers
+            char temp = s[pointer_i];
+            s[pointer_i] = s[pointer_j];
+            s[pointer_j] = temp;
+            pointer_i+=1;
+            pointer_j-=1;
+        }
+    }
+
 }
