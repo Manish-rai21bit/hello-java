@@ -1,11 +1,14 @@
 class BigO{
   // Rules for calculating Big O
-  // 1. Consider the worst case scenario
-  // 2. Remove Constants
-  // 3. Different terms for inputs
-  // 4. Drop Non Dormants
+  // i. Consider the worst case scenario
+  // ii. Remove Constants
+  // iii. Different terms for inputs, ex - if there are 2 input variables with
+  //    length 10 and 1000
+  // iv. Drop Non Dormants
 
-  // What is the Big O of the below function?
+  // Big  O cheatsheet - https://www.bigocheatsheet.com
+
+  // Q1. What is the Big O of the below function?
   // (Hint, you may want to go line by line)
   public int funChallenge(int input) {
     int a = 10; // O(1)
@@ -20,4 +23,17 @@ class BigO{
   }
   // Big O = O(1) + O(1) + O(n) + O(n) + O(n) + O(1)
   // = O(4+4n) = O(n)
+
+  // Q2. Nested loop's BigO
+
+  // Space Complexity
+  // What causes Space complexity?
+  // Variables
+  // Data Structures Function Call Allocations
+  public List<Integer> booooo(n){
+    // takes an array of n elements
+    for (int i=0; i<n.length; i++){
+      System.out.println("hallo!!!");
+    }
+  }
 }
